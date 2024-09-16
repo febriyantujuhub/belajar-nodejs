@@ -1,7 +1,3 @@
-FROM node:20-alpine
+FROM nginx:alpine
 
-WORKDIR /app
-
-RUN echo "console.log('mantap jiwa')" > main.js
-
-CMD ["node", "main.js"]
+RUN echo "ini web server" > /usr/share/nginx/html/index.html
